@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+        <h1>Todo-app</h1>
+    </div>
+    <div class="input-div">
+        <form>
+            <input type="text" class="text-input"  placeholder="Add new task">
+            <input class="add-button" type="submit" value="Add">
+        </form>
+        <div class="select-div">
+            <select name="todos" class="select-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="task-div">
+       <ul class="task-list"></ul>
+    </div>
+</div>
+</body>
+</html>
