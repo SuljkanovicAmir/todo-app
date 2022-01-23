@@ -100,8 +100,7 @@ body {
 
 .completed {
     text-decoration: line-through;
-    opacity: 0.5;
-    transform: scaleX(0.9) translateX(30px);
+    opacity: 0.4;
 }
 
 .fall {
@@ -132,4 +131,26 @@ body {
 }
 .text-input:hover::placeholder {
     color: white;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 425px) {
+ 
+.input-div   {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 5px;
+    flex-direction: column;
+}
+
 }

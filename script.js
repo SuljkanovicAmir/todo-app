@@ -12,24 +12,24 @@ filterOption.addEventListener('click', filterTodos);
 function addTask(e) {
     e.preventDefault();
     if (textInput.value == "") {
-        alert('Field cant be empty')
+        alert("Field can't be empty'")
         return false;
     } else {
-        let todoDiv = document.createElement('div');
+        const todoDiv = document.createElement('div');
             todoDiv.classList.add('todo');
         
-        let newTask = document.createElement('LI');
+        const newTask = document.createElement('LI');
             newTask.classList.add('new-task');
             newTask.textContent = textInput.value;
             todoDiv.appendChild(newTask);
             saveLocalStorage(textInput.value);
 
-        let deleteBtn = document.createElement('button');
+        const deleteBtn = document.createElement('button');
             deleteBtn.innerHTML = '<img src="./delete.svg"/>';
             deleteBtn.classList.add('delete-btn');
             todoDiv.appendChild(deleteBtn)
 
-        let checkBtn = document.createElement('button');
+        const checkBtn = document.createElement('button');
             checkBtn.innerHTML = '<img src="./check-mark-line.svg"/>';
             checkBtn.classList.add('check-btn');
             todoDiv.appendChild(checkBtn)
@@ -55,7 +55,6 @@ function deleteCheck(e) {
         todo.classList.toggle('completed');
         
      }
-     console.log(e.target);
 }
 
 
